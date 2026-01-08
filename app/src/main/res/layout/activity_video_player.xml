@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Gumlet Video Player Sample"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp" />
+
+    <com.gumlet.video.player.GumletPlayerView
+        android:id="@+id/gumlet_player_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_marginTop="16dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sample Video URLs:"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:paddingBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_play_hls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play HLS Video (.m3u8)"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_play_dash"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play DASH Video (.mpd)"
+            android:layout_marginBottom="8dp" />
+
+        <Button
+            android:id="@+id/btn_play_drm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Play DRM Protected Video"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tv_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ready to play video"
+            android:textSize="12sp"
+            android:padding="8dp"
+            android:background="#E0E0E0"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

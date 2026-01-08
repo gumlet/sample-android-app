@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Gumlet Video Player Sample</string>
+    <string name="gumlet_player_attribution_label">Video Playback</string>
+</resources>
